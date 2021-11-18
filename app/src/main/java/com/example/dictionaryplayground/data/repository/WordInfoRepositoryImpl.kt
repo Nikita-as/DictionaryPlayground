@@ -31,14 +31,14 @@ class WordInfoRepositoryImpl(
         catch (e: HttpException) {
             emit(
                 Resource.Error(
-                    message = "Oops, something went wrong!",
+                    message = "Мы не нашли ничего подходящего",
                     data = wordInfo
                 )
             )
         } catch (e: IOException) {
             emit(
                 Resource.Error(
-                    message = "Couldn't reach server, check your internet connection.",
+                    message = "Не удалось подучить данные, проверьте интернет соединение",
                     data = wordInfo
                 )
             )
