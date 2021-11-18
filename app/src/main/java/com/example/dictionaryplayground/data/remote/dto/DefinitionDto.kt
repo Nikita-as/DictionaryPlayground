@@ -3,13 +3,12 @@ package com.example.dictionaryplayground.data.remote.dto
 import com.example.dictionaryplayground.domain.model.Definition
 
 data class DefinitionDto(
-    val antonyms: List<String>?,
+    val antonyms: List<String?>,
     val definition: String?,
     val example: String?,
-    val synonyms: List<String>?
+    val synonyms: List<String?>
 ) {
-    fun toDefinition() : Definition {
-
+    fun toDefinition(): Definition {
         return Definition(
             antonyms = antonyms,
             definition = definition,

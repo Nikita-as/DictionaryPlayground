@@ -19,9 +19,9 @@ class Converters(
     }
 
     @TypeConverter
-    fun toMeaningsJson(meaning: List<Meaning>): String {
+    fun toMeaningsJson(meanings: List<Meaning>): String {
         return jsonParser.toJson(
-            obj = meaning,
+            meanings,
             object : TypeToken<ArrayList<Meaning>>() {}.type
         ) ?: "[]"
     }

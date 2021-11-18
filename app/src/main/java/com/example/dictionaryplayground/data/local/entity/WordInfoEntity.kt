@@ -7,16 +7,16 @@ import com.example.dictionaryplayground.domain.model.WordInfo
 
 @Entity
 data class WordInfoEntity(
-    @PrimaryKey val id: Int? = null,
-    val meanings: List<Meaning>?,
-    val origin: String?,
+    val word: String?,
     val phonetic: String?,
-    val word: String?
+    val origin: String?,
+    val meanings: List<Meaning?>,
+    @PrimaryKey val id: Int? = null
 ) {
     fun toWordInfo(): WordInfo {
         return WordInfo(
-            meanings = meanings,
             word = word,
+            meanings = meanings,
             origin = origin,
             phonetic = phonetic
         )
