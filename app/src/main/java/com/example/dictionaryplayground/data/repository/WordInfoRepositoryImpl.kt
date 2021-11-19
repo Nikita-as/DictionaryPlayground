@@ -38,7 +38,7 @@ class WordInfoRepositoryImpl(
         } catch (e: IOException) {
             emit(
                 Resource.Error(
-                    message = "Не удалось подучить данные, проверьте интернет соединение",
+                    message = "Не удалось получить данные, проверьте интернет соединение",
                     data = wordInfo
                 )
             )
