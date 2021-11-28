@@ -1,7 +1,7 @@
 # DictionaryPlayground
 Dagger-Hilt, MVVM, Retrofit, Room, Coroutines, Compose, Clean
 
-Search word
+Search word fragment
 
 ![2021-11-18_19-51-36](https://user-images.githubusercontent.com/80970900/142460439-dae7e48a-cf3e-404d-b640-195ba5cd9a1f.png)
 )
